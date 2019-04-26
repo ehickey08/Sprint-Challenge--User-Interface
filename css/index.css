@@ -96,7 +96,7 @@ nav a {
     text-decoration: none;
 }
 
-.home-jumbo{
+.home-jumbo, .about-jumbo{
     padding-bottom:3%;
 }
 .top-content {
@@ -210,4 +210,45 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.middle-content.about-page{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-content: space-between;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.info-box{
+    width:47%;
+    margin-bottom:7%;
+    border-bottom: 1px dashed black;
+}
+
+.info-box img{
+    padding-bottom:3%;
+}
+
+.info-box h2{
+    padding-left: 0px;
+    padding-bottom: 4%;
+}
+
+.info-box p{
+    padding-bottom: 4%;
+}
+
+.info-box button{
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 2% 5%;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.bottom-content-about-page{
+    margin-bottom:5%;
 }
