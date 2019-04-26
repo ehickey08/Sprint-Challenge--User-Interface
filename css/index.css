@@ -251,3 +251,69 @@ footer nav a {
 .bottom-content-about-page{
     margin-bottom:5%;
 }
+
+.jumbo-contact{
+    width:100%;
+    
+}
+
+form select {
+    width:250px;
+}
+
+form{
+    text-align: center;
+    margin-top:5%;
+    margin-bottom: 3%;
+}
+fieldset {
+    border: 2px groove;
+    padding: 3%;
+    width:60%;
+    margin-left:20%;
+    text-align: left;
+}
+
+
+fieldset span{
+    display:inline-block;
+    margin: 2% 0;
+    width:30%;
+}
+
+fieldset input{
+    padding:0px;
+}
+
+
+form textarea {
+    margin: 5% 0%;
+}
+
+.submit:hover{
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+nav a:hover, footer a:hover{
+    text-decoration:underline;
+}
+
+nav a:visited, footer a:visited{
+    color:#551A8B;
+}
+
+@keyframes scroll{
+    from{left: 0%;}
+    to {left: 80%;}
+}
+.headline{
+    margin-top:3%;
+    font-size:20px;
+    width: 20%;
+    text-align:center;
+    background-color:lightyellow;
+    font-weight:bold;
+    position:relative;
+    animation: scroll 10s infinite;
+}

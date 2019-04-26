@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sprint Challenge - Contact</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <div class='container contact-page'>
+
+        <header>
+            <img src='img/lambda-black.png' alt='Lambda logo'>
+            
+            <nav>
+                <a href='index.html'>Home</a>
+                <a href='about.html'>About</a> 
+                <a href='#'>Products</a>
+                <a href='#'>Blog</a>
+                <a href='contact.html'>Contact</a>
+            </nav>
+        </header>
+
+        <img class='jumbo-contact' src='img/contact.jpg' alt='Contact Page'>
+
+        <section class='headline'>
+            <p>Let us know how we are doing!</p>
+        </section>
+        
+        <form action='#' method ='GET'>
+            <fieldset>
+                <legend>Contact details:</legend>
+                <span class='text-title'>First Name:</span><input type='text' name='first-name'> <br>
+                <span class='text-title'>Last Name:</span><input type='text' name='last-name' required='required'><br>
+                <span class='text-title'>Password:</span><input type='password' name='password' required='required'><br>
+            </fieldset><br>
+            
+            <p>Please select your time zone: <br>
+                <input type='radio' name='time-zone' value='EST'>EST
+                <input type='radio' name='time-zone' value='CST'>CST
+                <input type='radio' name='time-zone' value='MST'>MST
+                <input type='radio' name='time-zone' value='PST'>PST
+            </p><br>
+
+            <p>Please choose your project manager(s).<br>(You can select more than one option by holding down control on a PC or command key on a Mac.</p><br>
+            <select name='project-managers' size='3' multiple='multiple'>
+                <option value="John Smith" selected='selected'>John Smith</option>
+                <option value='Jane Doe'>Jane Doe</option>
+                <option value='Brad Pitt'>Brad Pitt</option>
+                <option value='Bob Dylan'>Bob Dylan</option>
+                <option value='Other'>Other</option>
+            </select><br>
+
+            <br><p>How can we better serve you?</p>
+            <textarea name='comments' rows='5' cols = '80'>Enter your comments...</textarea><br>
+            <br>
+            <p>Send us your feedback:</p>
+            <input class='submit' type='submit' name='submit' value='Submit'>
+        </form>
+
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
