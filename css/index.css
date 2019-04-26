@@ -71,6 +71,34 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display:flex;
+    align-items:baseline;
+    justify-content: flex-start;
+    padding-bottom:5%;
+    padding-top:3%;
+}
+
+header img{
+    padding-right: 5%;
+}
+header nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    font-size: 14px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.home-jumbo, .about-jumbo{
+    padding-bottom:3%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -98,18 +126,57 @@ p {
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes div {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box-1{
+    background-color: teal;
+}
+
+.box-2{
+    background-color: gold;
+}
+
+.box-3{
+    background-color: cadetblue;
+}
+
+.box-4{
+    background-color: coral;
+}
+
+.box-5{
+    background-color: crimson;
+}
+
+.box-6{
+    background-color: forestgreen;
+}
+
+.box-7{
+    background-color: darkorchid;
+}
+
+.box-8{
+    background-color: hotpink;
+}
+
+.box-9{
+    background-color: indigo;
+}
+
+.box-10{
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +210,110 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.middle-content.about-page{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.info-box{
+    width:47%;
+    margin-bottom:7%;
+    border-bottom: 1px dashed black;
+}
+
+.info-box img{
+    padding-bottom:3%;
+}
+
+.info-box h2{
+    padding-left: 0px;
+    padding-bottom: 4%;
+}
+
+.info-box p{
+    padding-bottom: 4%;
+}
+
+.info-box button{
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 2% 5%;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.bottom-content-about-page{
+    margin-bottom:5%;
+}
+
+.jumbo-contact{
+    width:100%;
+    
+}
+
+form select {
+    width:250px;
+}
+
+form{
+    text-align: center;
+    margin-top:5%;
+    margin-bottom: 3%;
+}
+fieldset {
+    border: 2px groove;
+    padding: 3%;
+    width:60%;
+    margin-left:20%;
+    text-align: left;
+}
+
+
+fieldset span{
+    display:inline-block;
+    margin: 2% 0;
+    width:30%;
+}
+
+fieldset input{
+    padding:0px;
+}
+
+
+form textarea {
+    margin: 5% 0%;
+}
+
+.submit:hover{
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+nav a:hover, footer a:hover{
+    text-decoration:underline;
+}
+
+nav a:visited, footer a:visited{
+    color:#551A8B;
+}
+
+@keyframes scroll{
+    from{left: 0%;}
+    to {left: 80%;}
+}
+.headline{
+    margin-top:3%;
+    font-size:20px;
+    width: 20%;
+    text-align:center;
+    background-color:lightyellow;
+    font-weight:bold;
+    position:relative;
+    animation: scroll 10s infinite;
 }
